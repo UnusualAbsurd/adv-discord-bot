@@ -14,5 +14,3 @@ app.get('/', function(req, res) {
 app.listen(PORT, function() {
     console.log(`${chalk.yellowBright('[SERVER CONNECTION]')} Connected on port: ${PORT}`)
 })
-
-require('../adv')
