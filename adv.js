@@ -12,7 +12,6 @@ client.config = require('./config.json');
 ['event_handler', "commands_handler"].forEach((file) => {
     require(`./handlers/${file}`)(client)
 });
-require('./web/server')(client)
 
 const mongoose = require('mongoose')
 mongoose.connect(`${process.env.mongodb}`)
